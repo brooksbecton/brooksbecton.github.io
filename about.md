@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+<img src="{{ site.baseurl }}/images/dogs.jpg" alt="Blue Healer and Labradoodle laying on bed" style="width: 50%;"/>
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+A div slinger from Tennessee who's trying to learn more about the web development space. I also like to try different foods, walk my dogs, and play video games.
