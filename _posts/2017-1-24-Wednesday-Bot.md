@@ -13,6 +13,6 @@ The last feature, before it's initial release, was the ability for the bot to po
 
 ![Gif Macho Man Randy Savage saying, "Oooh Yeah."](https://media.giphy.com/media/l2SpKLnUXi63DMyCQ/giphy.gif)
 
-But the keywords we were using to query weren't bringing back the results of the frog or the meme that we were expected. It was going to best to pull form a curated collection of memes. Something like an imgur album or a youtube playlist
+But the keywords we were using to query weren't bringing back the results of the frog or the meme that we were expected. It was going to best to pull form a curated collection of memes. Something like an imgur album or a youtube playlist. These would make it easier for users because they can use the great YouTube or Imgur UI and the bot can just pull it down without restarting.
 
 [Wednesday Bot Repo ](https://github.com/brooksbecton/ItsWednesdayMyDudesDiscordBot)
