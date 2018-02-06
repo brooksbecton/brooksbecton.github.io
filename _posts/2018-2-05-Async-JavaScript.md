@@ -39,7 +39,7 @@ const luke = getLuke(); // undefined
 printName(luke); // No Person Supplied
 ```
 
-This may look like it will work, but remember that JavaScript is always synchronous. This is easy for me to remember if I think about JS always going "straight down." It say's its about to print the name, calls the function, _doesn't wait for the request to finish_, tries to prints Luke's name. After the print the api returns the data, but it is already too late.
+This may look like it will work, but remember that JavaScript is always synchronous. This is easy for me to remember if I think about JS always going "straight down." It say's its about to print the name, calls the function, _doesn't wait for the request to finish_, tries to prints Luke's name. After the print the api returns the data, but it is already too late.~
 
 ## Callbacks
 
