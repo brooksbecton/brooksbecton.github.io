@@ -10,7 +10,7 @@ I mostly deal in JavaScript technology, but like to try different languages and 
 
 ## Dogs
 
-<img src="{{ site.baseurl }}/images/dogs.png" alt="Blue Healer and Labradoodle laying on bed" style="width: 50%; float:left; padding: 2%;  "/>
+<img src="{{ site.baseurl }}/images/dogs.webp" alt="Blue Healer and Labradoodle laying on bed" style="width: 50%; float:left; padding: 2%;  "/>
 
 ### Peyton
 
