@@ -85,7 +85,7 @@ This works for this lunchbox example, but in reality this can get out of hand qu
 ## [Challenge](#challenge)
 
 It's important to understand what Callback Hell can look or feel like.
-Try to get all of the females from the films Luke was in and find the planets they are from
+Try this out.
 
 1. Find all the females from the films Luke was in
 1. Find the planets they are from
