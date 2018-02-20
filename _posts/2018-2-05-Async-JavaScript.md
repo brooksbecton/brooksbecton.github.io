@@ -49,7 +49,7 @@ printName(luke); // No Person Supplied
 
 This may look like it will work, but remember that JavaScript is always synchronous. This is easy for me to remember if I think about JS always going "straight down." It say's its about to print the name, calls the function, _doesn't wait for the request to finish_, tries to prints Luke's name. After the print the api returns the data, but it is already too late.~
 
-## Callbacks
+## [Callbacks](#callbacks)
 
 Callbacks are a way to pass a function into another function as a parameter and then running that "callback" after then async code has finished. With this example, we pass the print function in as a callback, so that when the data is back from the API, the data will get passed into the print function.
 
@@ -82,7 +82,7 @@ We can pass functions as parameters in JS because in functions are [First Class 
 
 This works for this lunchbox example, but in reality this can get out of hand quickly if you have to make a few sequential requests which leads to [Callback Hell](http://callbackhell.com/). It is much better to use Promises which we will get to next.
 
-## Challenge
+## [Challenge](#challenge)
 
 It's important to understand what Callback Hell can look or feel like.
 Try to get all of the females from the films Luke was in and find the planets they are from
