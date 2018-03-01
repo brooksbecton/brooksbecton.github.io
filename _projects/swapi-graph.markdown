@@ -34,3 +34,30 @@ Here is what I ended up with at the time of writing.
 * **Accessibility** - 94
 
 * **Best Practices** - 94
+
+## Challenges
+
+### Graph
+
+I made a small little "class" that helps interface the vis graphs with the data from the SWAPI. At first I dumped the
+entire contents of the SWAPI into the graph.
+
+![unknown.png](/uploads/unknown.png)
+
+There was way too much information on the page so I needed a way to filter down that information of to build up graphs. I went with the building up just so that users could make the graphs that they want and that would potentially use less data rather than pulling down all down and then having them filter down to a graph.
+
+### First Meaningful Paint
+
+Getting the the first meaningful paint in under 300ms was pretty tough and that is one of the main reasons the Performance in the lighthouse audit is a 76. If you are using an external library for CSS, it can be tough for it to not take up a lot of time block a paint. I did a few things such as using [React Loadable](https://github.com/jamiebuilds/react-loadable) to code split on routes.
+
+![after&BeforeCodeSplit.png](/uploads/after&BeforeCodeSplit.png)
+
+*After and Before Shot of Bundle Sizes*
+
+It helped reduce the size of the blocking scripts, but I'm still thinking about this one.
+
+
+## Wrap Up
+
+I'm glad I made this. I got to try a few new technologies and ran into some challenges that I haven't run into before. So now what?  Go check out the graph and open some issues if you find any bugs or have an idea for improvements.
+
