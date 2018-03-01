@@ -11,7 +11,6 @@ tags:
 layout: post
 ---
 
-# SWAPI Graph
 
 [https://brooksbecton.github.io/SWAPI-Graph/](https://brooksbecton.github.io/SWAPI-Graph/)
 
