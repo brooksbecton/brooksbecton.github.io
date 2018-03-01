@@ -1,6 +1,14 @@
 ---
 title: SWAPI Graph
 date: 2018-03-01 19:16:00 Z
+categories:
+- Projects
+- React
+tags:
+- SWAPI
+- React
+- VIS
+layout: post
 ---
 
 # SWAPI Graph
