@@ -11,10 +11,12 @@ tags:
 layout: post
 ---
 
+Web site for visualizing the data found in the Star Wars API. Allows users to insert nodes into a graph and the app will generate the possible edges for the nodes
 
-[https://brooksbecton.github.io/SWAPI-Graph/](https://brooksbecton.github.io/SWAPI-Graph/)
+[Check It Out](https://brooksbecton.github.io/SWAPI-Graph/)
 
-I had started making a few posts about how asynchronous code works in JavaScript. At the the end of these I wanted to make a challenge so that someone could get some practice with the new ideas they had just learned about. Also, I would use the [SWAPI](https://swapi.co/) as a data source.
+
+I had started making a few posts about how asynchronous code works in JavaScript. At the the end of these I wanted to make a challenge so that someone could get some practice with the new ideas they had just learned about. Also, I wanted to use the [SWAPI](https://swapi.co/) as a data source.
 
 Why SWAPI?
 
@@ -58,13 +60,12 @@ There was way too much information on the page so I needed a way to filter down 
 Getting the the first meaningful paint in under 300ms was pretty tough and that is one of the main reasons the Performance in the lighthouse audit is a 76. If you are using an external library for CSS, it can be tough for it to not take up a lot of time block a paint. I did a few things such as using [React Loadable](https://github.com/jamiebuilds/react-loadable) to code split on routes.
 
 ![after&BeforeCodeSplit.png](/uploads/after&BeforeCodeSplit.png)
-
 *After and Before Shot of Bundle Sizes*
 
 It helped reduce the size of the blocking scripts, but I'm still thinking about this one.
-
 
 ## Wrap Up
 
 I'm glad I made this. I got to try a few new technologies and ran into some challenges that I haven't run into before. So now what?  Go check out the graph and open some issues if you find any bugs or have an idea for improvements.
 
+[https://brooksbecton.github.io/SWAPI-Graph/](https://brooksbecton.github.io/SWAPI-Graph/)
