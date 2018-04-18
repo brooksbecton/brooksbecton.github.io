@@ -50,7 +50,7 @@ Here is what I ended up with at the time of writing.
 I made a small little "class" that helps interface the vis graphs with the data from the SWAPI. At first I dumped the
 entire contents of the SWAPI into the graph.
 
-![unknown.png](/uploads/unknown.png)
+<img class="lazy" data-src="/uploads/unknown.png" sizes="(min-width: 100%)"  /> 
 
 There was way too much information on the page so I needed a way to filter down that information of to build up graphs. I went with the building up just so that users could make the graphs that they want and that would potentially use less data rather than pulling down all down and then having them filter down to a graph.
 
@@ -58,7 +58,8 @@ There was way too much information on the page so I needed a way to filter down 
 
 Getting the the first meaningful paint in under 300ms was pretty tough and that is one of the main reasons the Performance in the lighthouse audit is a 76. If you are using an external library for CSS, it can be tough for it to not take up a lot of time block a paint. I did a few things such as using [React Loadable](https://github.com/jamiebuilds/react-loadable) to code split on routes.
 
-![after&BeforeCodeSplit.png](/uploads/after&BeforeCodeSplit.png)
+<img class="lazy" alt="Screenshot of the console containing before and after sizes of bundles" data-src="/uploads/after&BeforeCodeSplit.png" sizes="(min-width: 100%)"  /> 
+
 _After and Before Shot of Bundle Sizes_
 
 It helped reduce the size of the blocking scripts, but I'm still thinking about this one.
