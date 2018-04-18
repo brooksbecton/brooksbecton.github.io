@@ -7,7 +7,7 @@ Our time clock has had some issues with how with how supervisors add, edit, and 
 
 The previous flow for fixing a punch:
 
-1.  Find the error. _This can be a task on it's own_.
+1.  Find the error. _This can be a task on its own_.
 1.  Make an edit
 1.  Click off of a student and then click back or refresh the page
 1.  Look at the amount of hours worked _This could be different then what gets printed on the time sheet._
@@ -43,7 +43,7 @@ Checking the punches has to find errors that are objectively incorrect. Objectiv
 
 Finding the malformed punches is a slightly harder issue, but not too bad. Our data base punches table is set up to take in single punches. So each individual row is a punch. Pairing up these punches can be done, but is brittle to punches that don't follow a clock in followed by a clock out.
 
-How do this rogue punches enter the database?
+How do these rogue punches enter the database?
 
 _Ya students figuring out a way to clock in a million times?_
 
