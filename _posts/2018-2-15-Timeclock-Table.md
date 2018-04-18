@@ -7,11 +7,11 @@ Our time clock has had some issues with how with how supervisors add, edit, and 
 
 The previous flow for supervisors is:
 
-1. Make an edit
-1. Click off of a student and then click back or refresh the page
-1. Look at the amount of hours worked (This could be different then what gets printed on the time sheet.)
-1. Print the time sheet
-1. Check to see if the pay actually worked out
+1.  Make an edit
+1.  Click off of a student and then click back or refresh the page
+1.  Look at the amount of hours worked (This could be different then what gets printed on the time sheet.)
+1.  Print the time sheet
+1.  Check to see if the pay actually worked out
 
 _Repeat as necessary_
 
@@ -21,7 +21,7 @@ All of these steps lead to supervisors getting frustrated or confused. The solut
 
 If someone came by to ask for help with their student's punches, it was easiest for me to use something like [MySQL Workbench](https://www.mysql.com/products/workbench/) and see what the punches look like in the database. Most of the time there was some kind of odd misplaced punch and I would delete it. This was almost always followed by the supervisor saying something like, "Oh it was super clear when you look at it that way, but it's hard to see that with what we have."
 
-I did a little searching and decided to use [React Table](https://github.com/react-tools/react-table) because it had some built in sorting, searching, and it was easy to just throw your data at it. The UI is clear and more to what I feel most people have seen before. It basically looks like a spreadsheet.
+I did a little searching and decided to use [React Table](https://github.com/react-tools/react-table) because it had some built in sorting, searching, and it was easy to just throw your data at it. The UI is clear and more to what I feel most people have seen before.
 
 ## Responsiveness
 
@@ -29,11 +29,13 @@ We needed a way to provide instant feedback to a supervisor right after a someon
 
 I also provided a few checks for students punches to help supervisors see problems like:
 
-1. **Double Clock Ins/Outs** - A supervisor accidentally add in an extra clock in/out.
-1. **Overworking/Missed Punch** - A student has allegedly worked over 8 hours straight.
+1.  **Double Clock Ins/Outs** - A supervisor accidentally add in an extra clock in/out.
+1.  **Overworking/Missed Punch** - A student has allegedly worked over 8 hours straight.
 
 Both of these will get highlighted for the supervisor to draw their eyes straight to the problem. This directly fixes the issue of a supervisor not knowing if the change they just made causes more issues. As soon as a supervisor makes an edit, the punches get re-pulled, both of these checks happen, and the rows will get highlighted if anything is wrong.
 
-## Now What?
+<img src="{{ site.baseurl }}/images/timeclock-table/studentsTable.webp" alt="Table of students time totals" />
+This is the table that the users first see. It lists their students who have punches for the pay period they have selected.
 
-I should have the table finished on Monday and will release it to our largest departments. After two reps of pay periods, we will pull feed back
+<img src="{{ site.baseurl }}/images/timeclock-table/individualTable.webp" alt="Table of an individual student's time totals" />
+This what it looks like once a user clicks on a student.
