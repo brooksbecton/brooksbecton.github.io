@@ -3,3 +3,21 @@
 
 @import "highlights";
 @import "svg-icons";
+
+
+.backToTop{
+    background-color: #295785ad; 
+    border: 0px; 
+    border-radius: 50%;
+    bottom: 27px; 
+    font-size: 18px;
+    height: 40px; 
+    position: fixed;
+    right: 7%; 
+    width: 40px; 
+}
+
+.backToTop:hover{
+    background-color: #295785; 
+    cursor: pointer;
+}

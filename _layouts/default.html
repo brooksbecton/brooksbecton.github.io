@@ -52,6 +52,8 @@
         {{ content }}
     </div>
 
+    <button class="backToTop">▲</button>
+
     <div class="wrapper-footer">
         <div class="container">
             <footer class="footer">
@@ -63,8 +65,21 @@
     {% include analytics.html %}
     
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js"></script>
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/elevator.js/1.0.1/elevator.min.js" integrity="sha256-NrbHsMCpDJ7fPUllFxXcLDonf9mE/GF/VjaL88Qm5Zo=" crossorigin="anonymous"></script>
 <script>
-var myLazyLoad = new LazyLoad({elements_selector: ".lazy"});
+    window.onload = function() {
+        // Init Image Lazy Load
+        var myLazyLoad = new LazyLoad({elements_selector: ".lazy"});
+
+        // Init ElevatorJS
+        var elevator = new Elevator({
+            duration: 1000,
+            element: document.querySelector('.backToTop'),
+            targetElement: document.querySelector('.wrapper-masthead'),
+        });
+    }
 </script>
+
 </html>
