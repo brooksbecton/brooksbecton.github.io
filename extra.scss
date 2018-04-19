@@ -5,6 +5,7 @@
 @import "svg-icons";
 
 
+
 .backToTop{
     background-color: #295785ad; 
     border: 0px; 
@@ -13,6 +14,8 @@
     font-size: 18px;
     height: 40px; 
     position: fixed;
+
+    opacity: 0; 
     right: 7%; 
     width: 40px; 
 }
@@ -21,3 +24,82 @@
     background-color: #295785; 
     cursor: pointer;
 }
+
+.backToTop.fadeIn{
+    opacity: 1;
+    -webkit-animation: fadeIn .5s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeIn .5s forwards; /* Firefox < 16 */
+        -ms-animation: fadeIn .5s forwards; /* Internet Explorer */
+         -o-animation: fadeIn .5s forwards; /* Opera < 12.1 */
+            animation: fadeIn .5s forwards;
+}
+
+.backToTop.fadeOut{
+    opacity: 0;
+    -webkit-animation: fadeOut .5s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeOut .5s forwards; /* Firefox < 16 */
+        -ms-animation: fadeOut .5s forwards; /* Internet Explorer */
+         -o-animation: fadeOut .5s forwards; /* Opera < 12.1 */
+            animation: fadeOut .5s forwards;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes fadeOut {
+    from   { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeOut {
+    from   { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeOut {
+    from   { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeOut {
+    from   { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeOut {
+    from   { opacity: 1; }
+    to { opacity: 0; }
+}
+
