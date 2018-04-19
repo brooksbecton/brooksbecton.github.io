@@ -5,7 +5,29 @@
 @import "svg-icons";
 
 
+.wedge{
+    height: 75px;;
+    position: absolute;
+    width: 100%; 
+}
 
+.wedgeContainer{
+    background-color: tomato;
+    padding-bottom: 5%;
+}
+
+
+.posts{
+    background-color: tomato;
+    padding: 5%;
+}
+
+.posts h1:first-child{
+    margin: 0px;
+}
+
+
+/** Back to Top Button**/
 .backToTop{
     background-color: #295785ad; 
     border: 0px; 
