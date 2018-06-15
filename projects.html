@@ -2,19 +2,29 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for projects in site.projects %}
-    <article class="projects">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/card.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/extra.css" /> 
 
-      <h1><a href="{{ site.baseurl }}{{ projects.url }}">{{ projects.title }}</a></h1>
 
-      <div class="entry">
-        {{ projects.excerpt }}
-      </div>
+<div class="projects">
+  <h1>Projects</h1>
+  <div class="card-container">
+    <div class="card">
+      <a href="/projects/SWAPI.html">
+        <img src="http://via.placeholder.com/172x150" alt="">
+        <h2>SWAPI Graph</h2>
+      </a>
+      <p>PWA that takes data from the Star Wars API and creates a graph based on the relationships of the entries</p>
+    </div>
 
-      <a href="{{ site.baseurl }}{{ projects.url }}" class="read-more">Read More</a>
-    </article>
+    <div class="card">
+      <a href="/projects/SWAPI.html">
+        <h2>Myrna</h2>
+      </a>
+      <p>Myrna Collet Lee costume rental site for displaying and renting costume pieces.</p>
+    </div>
 
-{% endfor %}
+
+  </div>
 
 </div>
